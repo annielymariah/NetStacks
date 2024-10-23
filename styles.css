@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wdth,wght@112.5,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgb(42, 39, 73), rgb(109, 90, 148));
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background: rgb(97, 77, 150);
+    border-bottom: 1px solid rgb(164, 131, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+header p {
+    font-family: "Press Start 2P", serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.5s; 
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+nav:hover a {
+    color: rgb(164, 131, 255);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#courses {
+    padding: 48px 16px;
+    text-align: center;
+}
+
+#courses h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#courses strong {
+    font-style: oblique;
+}
+
+.course-card {
+    background-color: rgb(31, 27, 72);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.course-card h3 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.course-card p {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(74, 171, 214);
+    padding: 10px 0;
+}
+
+#presentation {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 100px 40px;
+}
+
+#presentation h1 {
+    font-family: "Press Start 2P", serif;
+    font-size: 32px;
+    margin-right: 50%;
+}
+
+#presentation p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+#presentation strong {
+    color: rgb(74, 171, 214);
+    transition: color 0.3s;
+}
+
+#presentation strong:hover {
+    color: rgb(255, 0, 153);
+}
+
+.activity-list {
+    list-style-type: none;
+    border: 2px solid rgb(164, 131, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 8px; 
+}
+
+.activity-list a {
+    text-decoration: none;
+    display: block; 
+    padding: 1px; 
+    color: inherit; 
+}
+
+.activity-list:hover {
+    background-color: rgb(41, 34, 119);
+    cursor: pointer;
+}
+
+hr {
+    color: rgb(164, 131, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

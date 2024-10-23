@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wdth,wght@112.5,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgb(42, 39, 73), rgb(109, 90, 148));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px; /* Espaçamento em torno do conteúdo */
+}
+
+#pontos {
+    font-size: 18px;
+    color: rgb(164, 131, 255);
+    margin-bottom: 20px; /* Espaçamento abaixo da pontuação */
+}
+
+#conteudo {
+    background-color: rgb(31, 27, 72);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px; /* Limite de largura para o conteúdo */
+    margin: auto; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+#explicacao {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px; /* Espaçamento abaixo da explicação */
+}
+
+#titulo {
+    font-family: "Press Start 2P", serif;
+    font-size: 24px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+#alternativas {
+    list-style-type: none;
+    padding: 0; /* Remove padding padrão da lista */
+}
+
+.alternativa {
+    background-color: rgb(74, 171, 214);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(164, 131, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento vertical entre alternativas */
+    transition: background-color 0.3s, transform 0.3s; /* Transições para o hover */
+    cursor: pointer; /* Cursor muda para pointer */
+}
+
+.alternativa:hover {
+    background-color: rgb(41, 34, 119);
+    transform: scale(1.05); /* Aumenta um pouco o botão ao passar o mouse */
+}
+
+.hidden {
+    display: none; /* Esconde elementos com a classe 'hidden' */
+}
