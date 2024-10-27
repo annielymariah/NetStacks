@@ -136,6 +136,7 @@ main {
     border-radius: 5px;
     color: rgb(255, 255, 255);
     padding: 8px; 
+    transition: transform 0.3s; 
 }
 
 .activity-list a {
@@ -143,10 +144,12 @@ main {
     display: block; 
     padding: 1px; 
     color: inherit; 
+    
 }
 
 .activity-list:hover {
     background-color: rgb(41, 34, 119);
+    transform: scale(1.05);
     cursor: pointer;
 }
 

@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wdth,wght@112.5,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgb(42, 39, 73), rgb(109, 90, 148));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px; 
+}
+
+#score {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    background-color: rgb(31, 27, 72);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+}
+
+#content {
+    background-color: rgb(31, 27, 72);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto; 
+}
+
+#explanation {
+    font-size: 28px;
+    text-align: justify;
+    color: rgb(255, 255, 255); 
+}
+
+#title {
+    font-family: "Press Start 2P", serif;
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+#options {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.option {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(164, 131, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0; 
+    transition: transform 0.3s; 
+    cursor: pointer; 
+}
+
+.option:hover {
+    background-color: rgb(41, 34, 119);
+    transform: scale(1.05); 
+}
+
+.hidden {
+    display: none;
+}
