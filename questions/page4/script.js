@@ -6,21 +6,21 @@ let questions = [{
 },
 
 {
-    explanation: 'Enlace de dados: A camada de enlace passa a receber os dados e dividi-los em partes menores, adicionado a essas partes alguns elementos específicos, como informações, endereço de origem e a chegada, e realiza uma gestão de falhas.',
+    explanation: 'Enlace de dados: A camada de enlace passa a receber os dados e dividi-los em partes menores, adicionado a essas partes alguns elementos específicos, como informações, endereço de origem e a chegada, e realiza uma gestão de falhas, um dos principais protocolos utilizados na camada de enlace de dados para detectar e corrigir erros de transmissão é o de Ethernet.',
     title: 'Qual é o principal protocolo utilizado na camada de enlace de dados para detectar e corrigir erros de transmissão?',
     options: ['IP', 'TCP', 'Ethernet', 'HTTP'],
     correct: 2
 },
 
 {
-    explanation: 'Camada de rede: Todos os dados da rede externa é supervisionado. Para chegar no endereço de chegada, é realizado o roteamento dos dados entre os nós da rede. Estes nós realizam o encaminhamento dos pacotes de dados. Está rede tem abrangência de uma WAN(Wide-Area Network).',
+    explanation: 'Camada de rede: Todos os dados da rede externa é supervisionado. Para chegar no endereço de chegada, é realizado o roteamento dos dados entre os nós da rede. Estes nós realizam o encaminhamento dos pacotes de dados. Está rede tem abrangência de uma WAN(Wide-Area Network), além disso o protocolo IP atua na camada de rede.',
     title: 'O protocolo IP (Internet Protocol) opera em qual camada do modelo OSI?',
     options: ['Camada de Aplicação', 'Camada de Rede', 'Camada de Sessão', 'Camada de Apresentação'],
     correct: 1
 },
 
 {
-    explanation: 'Camada de transporte: Sua principal função é ligar a acamada de sessão à camada de rede, garantir que todos os bloco que forma criando no nível 5 sejam redirecionados para a rede.',
+    explanation: 'Camada de transporte: Sua principal função é ligar a camada de sessão à camada de rede, garantir que todos os blocos que foram criados no nível 5 sejam redirecionados para a rede, o protocolo que garante a entrega confiável de pacotes de dados na camada de transporte é o TCP.',
     title: 'Qual dos seguintes protocolos garante a entrega confiável de pacotes de dados na camada de transporte?',
     options: ['UDP', 'HTTP', 'TCP', 'DNS'],
     correct: 2
@@ -34,14 +34,14 @@ let questions = [{
 },
 
 {
-    explanation: 'Camada de apresentação: As palavras semântica e sintaxe desempenham um papel crucial nesta camada, pois se referem às informações transmitidas, permitindo que computadores com diferentes formas internas de representar os dados possam se comunicar.',
+    explanation: 'Camada de apresentação: As palavras semântica e sintaxe desempenham um papel crucial nesta camada, pois se referem às informações transmitidas, permitindo que computadores com diferentes formas internas de representar os dados possam se comunicar, além disso, uma função típica da camada de apresentação no modelo OSI é a compressão de dados.',
     title: 'Qual das seguintes é uma função típica da camada de apresentação no modelo OSI?',
     options: ['Compressão de dados', 'Definição de rotas de rede', 'Estabelecimento de sessões', 'Transmissão de bits'],
     correct: 0
 },
 
 {
-    explanation: 'Camada de aplicação: A camada 7 é a mais próxima do usuário, ele que mostra todos os aplicativos e que têm acesso à rede. Disponibiliza ao usuário a interface e acesso a email, transferência de arquivos remotos, gerenciamento de banco de dados compartilhados e entre outros.',
+    explanation: 'Camada de aplicação: A camada 7 é a mais próxima do usuário, ele que mostra todos os aplicativos que têm acesso à rede. Disponibiliza ao usuário a interface e acesso a email, transferência de arquivos remotos, gerenciamento de banco de dados compartilhados e entre outros, o protocolo FTP opera na camada de aplicação do modelo OSI.',
     title: 'Qual dos seguintes protocolos opera na camada de aplicação do modelo OSI?',
     options: ['FTP', 'ICMP', 'ARP', 'PPP'],
     correct: 0
@@ -120,4 +120,3 @@ let app = {
 };
 
 app.start();
-
